@@ -20,23 +20,15 @@ body {
     display: flex;
 }
 
-.dashed {
-    border: dashed 2px black;
-}
-
-.bg-orange {
-    background-color: orange;
-}
-
 .bg-gray {
     background-color: lightgray;
 }
+
 /* generic css end */
 
 header {
-    background: lightblue;
+    background: #3C60E0;
     padding-top: 1em;
-    padding-bottom: 5px;
 }
 
 .header-container {
@@ -50,12 +42,41 @@ header {
 .header-column-links {
     width: 60%;
     justify-content: center;
+    color: white;
 }
 
 .header-column-login {
     width: 20%;
     justify-content: flex-end;
 }
+
+.small-button-style {
+    padding: 8px;
+    background-color: white;
+    border-color: transparent;
+    border-radius: 20px;
+}
+
+.big-button-style-white {
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+    border-color: transparent;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.big-button-style-black {
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #23272A;
+    color: white;
+    border-color: transparent;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
 
 .header-column-logo,
 .header-column-links,
@@ -64,20 +85,41 @@ header {
 }
 
 .jumbotron {
-    background-color: blue;
     justify-content: center;
     margin-top: 1em;
+    background-image: url("/img/jumbo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .jumbotron-container {
     justify-content: center;
-    min-height: 250px;
+    min-height: 630px;
     padding: 1em 0;
+
 }
 
 .jumbotron-content {
-    background-color: violet;
-    width: 80%;
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.main-title {
+    display: flex;
+    color: white;
+    font-size: 58px;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+.sub-title {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 150%;
+    margin-bottom: 20px;
 }
 
 .section-row {
