@@ -1,4 +1,5 @@
 /* generic css */
+
 * {
     padding: 0;
     margin: 0;
@@ -21,10 +22,19 @@ body {
 }
 
 .bg-gray {
-    background-color: lightgray;
+    background-color: #F6F6F6;
+}
+
+.wave-grey {
+    color: #F6F6F6;
+    width: 100%;
+    margin-bottom: -5px;
 }
 
 /* generic css end */
+
+
+/* header */
 
 header {
     background: #3C60E0;
@@ -50,8 +60,42 @@ header {
     justify-content: flex-end;
 }
 
+.header-column-logo,
+.header-column-links,
+.header-column-login {
+    align-items: center;
+}
+
+/* header end */
+
+/* sub header */
+
+.jumbotron {
+    justify-content: center;
+    margin-top: 1em;
+    background-image: url("/img/jumbo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.jumbotron-container {
+    justify-content: center;
+    min-height: 630px;
+    padding: 1em 0;
+
+}
+
+.jumbotron-content {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* sub header end */
 
 /* buttons */
+
 .small-button-style {
     padding: 8px;
     background-color: white;
@@ -91,33 +135,7 @@ header {
 
 /* buttons end */
 
-.header-column-logo,
-.header-column-links,
-.header-column-login {
-    align-items: center;
-}
-
-.jumbotron {
-    justify-content: center;
-    margin-top: 1em;
-    background-image: url("/img/jumbo.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-.jumbotron-container {
-    justify-content: center;
-    min-height: 630px;
-    padding: 1em 0;
-
-}
-
-.jumbotron-content {
-    display: flex;
-    width: 75%;
-    flex-direction: column;
-    align-items: center;
-}
+/* texts & titles */
 
 .main-title {
     display: flex;
@@ -169,6 +187,10 @@ header {
 
 }
 
+/* texts & titles end */
+
+/* size and positions adjustments */
+
 .section-row {
     padding: 10em 0;
     min-height: 200px;
@@ -187,3 +209,9 @@ header {
     justify-content: center;
     text-align: center,
 }
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+/* size and positions adjustments end */
